@@ -1,0 +1,263 @@
+/* Variáveis de Cores e Fontes */
+:root {
+    --bg-creme: #FCFBF4;
+    --bg-amarelo-claro: #FFFDE7;
+    --texto-escuro: #333333;
+    --verde-logo: #6B8E23;
+    --dourado: #D4AF37;
+    
+    --fonte-titulos: 'Playfair Display', serif;
+    --fonte-textos: 'Montserrat', sans-serif;
+    --fonte-logo: 'Parisienne', cursive;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--fonte-textos);
+    color: var(--texto-escuro);
+    background-color: var(--bg-creme);
+    line-height: 1.6;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+.hero-section {
+    background-color: var(--bg-amarelo-claro);
+    padding: 40px 5%;
+}
+
+.hero-content {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+.hero-text-block {
+    flex: 1;
+    min-width: 300px;
+    text-align: center;
+}
+
+.subtitle {
+    font-weight: 600;
+    color: var(--dourado);
+    margin-bottom: 20px;
+}
+
+.hero-logo-img {
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.brand-name {
+    font-family: var(--fonte-logo);
+    font-size: 3rem;
+    color: var(--verde-logo);
+    margin-bottom: 30px;
+}
+
+.call-to-action {
+    background-color: rgba(212, 175, 55, 0.1);
+    padding: 15px 30px;
+    border-radius: 20px;
+    display: inline-block;
+}
+
+.call-to-action p {
+    font-weight: 600;
+    color: var(--dourado);
+    font-size: 0.9rem;
+}
+
+.hero-image-main {
+    flex: 1;
+    min-width: 300px;
+}
+
+.hero-image-main img {
+    border-radius: 8px;
+    width: 100%;
+    object-fit: cover;
+}
+
+.hero-footer {
+    text-align: center;
+    margin-top: 60px;
+}
+
+.hero-footer h2 {
+    font-family: var(--fonte-titulos);
+    color: var(--dourado);
+    font-weight: 400;
+    margin-bottom: 40px;
+}
+
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+.gallery-grid img {
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+    border-radius: 4px;
+}
+
+/* --- SEÇÃO 2: PRODUTOS --- */
+.products-section {
+    background-color: var(--bg-creme);
+    padding: 80px 5%;
+}
+
+.products-container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 50px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.products-image {
+    flex: 1;
+    min-width: 300px;
+}
+
+.products-image img {
+    border-radius: 8px;
+    width: 100%;
+}
+
+.products-info {
+    flex: 1;
+    min-width: 300px;
+}
+
+.products-info h2 {
+    font-family: var(--fonte-titulos);
+    color: var(--dourado);
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.products-description {
+    font-size: 1rem;
+    margin-bottom: 30px;
+}
+
+.production-time {
+    margin-top: 15px;
+    font-style: italic;
+    color: #666;
+}
+
+.categories-list {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.categories-list li {
+    font-weight: 600;
+    color: var(--dourado);
+    letter-spacing: 1px;
+}
+
+/* --- SEÇÃO 3: CONTATO --- */
+.contact-section {
+    background-color: #E8E0D5; /* Tom mais escuro baseado no layout do skincare */
+    padding: 80px 5% 0 5%;
+    text-align: center;
+}
+
+.contact-logo {
+    max-width: 150px;
+    margin: 0 auto 20px auto;
+}
+
+.small-title {
+    font-weight: 600;
+    color: var(--verde-logo);
+    margin-bottom: 10px;
+}
+
+.contact-heading h2 {
+    font-family: var(--fonte-titulos);
+    color: var(--verde-logo);
+    font-size: 2.5rem;
+    max-width: 600px;
+    margin: 0 auto 50px auto;
+}
+
+.contact-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 30px;
+    text-align: left;
+    max-width: 1000px;
+    margin: 0 auto 60px auto;
+}
+
+.contact-item h3 {
+    font-size: 0.9rem;
+    color: var(--verde-logo);
+    margin-bottom: 15px;
+    font-weight: 600;
+}
+
+.contact-item p, .contact-item a {
+    color: var(--texto-escuro);
+    text-decoration: none;
+    font-size: 0.9rem;
+}
+
+.contact-footer-image {
+    position: relative;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.contact-footer-image img {
+    width: 100%;
+    border-radius: 8px 8px 0 0;
+}
+
+.footer-brand {
+    font-family: var(--fonte-logo);
+    font-size: 2.5rem;
+    color: var(--bg-creme);
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+}
+
+/* Responsividade Básica */
+@media (max-width: 768px) {
+    .brand-name {
+        font-size: 2.5rem;
+    }
+    
+    .contact-heading h2 {
+        font-size: 1.8rem;
+    }
+    
+    .contact-grid {
+        text-align: center;
+    }
+}
