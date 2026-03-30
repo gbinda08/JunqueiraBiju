@@ -228,7 +228,7 @@ img {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     gap: 30px;
-    text-align: left;
+    text-align: center;
     max-width: 1000px;
     margin: 0 auto 60px auto;
 }
