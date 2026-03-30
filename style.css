@@ -103,11 +103,10 @@ img {
     margin-bottom: 40px;
 }
 
-.gallery-grid img {
-    width: 100%;
-    height: 350px;
-    border-radius: 4px;
-    background-color: #E8E0D5; 
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
 }
 
 .gallery-grid img {
@@ -115,25 +114,6 @@ img {
     height: 350px;
     object-fit: cover;
     border-radius: 4px;
-}
-
-.img-contain {
-    object-fit: contain; 
-}
-
-.img-cover-center {
-    object-fit: cover; 
-    object-position: center; /
-}
-
-.img-cover-top {
-    object-fit: cover; 
-    object-position: top; 
-}
-
-.img-cover-bottom {
-    object-fit: cover; 
-    object-position: bottom; 
 }
 
 /* --- SEÇÃO 2: PRODUTOS --- */
@@ -212,7 +192,7 @@ img {
 
 /* --- SEÇÃO 3: CONTATO --- */
 .contact-section {
-    background-color: #E8E0D5; 
+    background-color: #E8E0D5;
     padding: 80px 5% 0 5%;
     text-align: center;
 }
