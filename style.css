@@ -138,11 +138,11 @@ img {
 
 .gallery-grid img {
     width: 100%;
-    aspect-ratio: 1 / 1; /* Força todas as imagens a serem quadrados perfeitos */
-    object-fit: contain; /* Encaixa a imagem inteira sem dar zoom ou cortar */
-    border-radius: 8px; /* Mantém as bordinhas arredondadas */
-    background-color: rgba(0, 0, 0, 0.03); /* Cria um fundo cinza muito sutil para preencher as sobras caso a foto seja muito retangular */
-    padding: 10px; /* Dá um respiro para a imagem não colar nas bordas */
+    aspect-ratio: 1 / 1; 
+    object-fit: contain; 
+    border-radius: 8px; 
+    background-color: rgba(0, 0, 0, 0.03); 
+    padding: 10px; 
 }
 
 /* --- SEÇÃO 2: PRODUTOS --- */
