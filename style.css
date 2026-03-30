@@ -103,6 +103,32 @@ img {
     margin-bottom: 40px;
 }
 
+.categories-list {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px; 
+    margin-top: 20px;
+}
+
+.categories-list li {
+    font-weight: 600;
+    color: var(--dourado);
+    letter-spacing: 1px;
+    padding: 10px 25px;
+    border: 2px solid var(--dourado);
+    border-radius: 30px; 
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-size: 0.9rem;
+}
+
+.categories-list li:hover {
+    background-color: var(--dourado);
+    color: var(--bg-creme);
+    transform: translateY(-2px);
+}
+
 .gallery-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
@@ -162,32 +188,6 @@ img {
     margin-top: 15px;
     font-style: italic;
     color: #666;
-}
-
-.categories-list {
-    list-style: none;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 15px; 
-    margin-top: 20px;
-}
-
-.categories-list li {
-    font-weight: 600;
-    color: var(--dourado);
-    letter-spacing: 1px;
-    padding: 10px 25px;
-    border: 2px solid var(--dourado);
-    border-radius: 30px; 
-    cursor: pointer;
-    transition: all 0.3s ease;
-    font-size: 0.9rem;
-}
-
-.categories-list li:hover {
-    background-color: var(--dourado);
-    color: var(--bg-creme);
-    transform: translateY(-2px);
 }
 
 /* --- SEÇÃO 3: CONTATO --- */
