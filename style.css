@@ -115,7 +115,7 @@ img {
     margin-top: 30px;
 }
 
-.categories-list li {
+.categories-list > li {
     font-weight: 600;
     color: var(--dourado);
     letter-spacing: 1px;
@@ -125,16 +125,13 @@ img {
     cursor: pointer;
     transition: all 0.3s ease;
     font-size: 0.9rem;
+    position: relative; /* Necessário para o submenu não voar pela tela */
 }
 
-.categories-list li:hover {
+.categories-list > li:hover {
     background-color: var(--dourado);
     color: var(--bg-creme);
     transform: translateY(-2px);
-}
-
-.categories-list li.dropdown-container {
-    position: relative; 
 }
 
 .arrow {
@@ -144,45 +141,52 @@ img {
 
 .dropdown-menu {
     position: absolute;
-    top: 100%; /* Posiciona logo abaixo do botão principal */
+    top: 100%; 
     left: 50%;
-    transform: translateX(-50%) translateY(15px); /* Centraliza e empurra um pouco para baixo */
+    transform: translateX(-50%) translateY(15px);
     background-color: var(--bg-creme);
     border: 1px solid var(--dourado);
     border-radius: 15px;
     padding: 10px 0;
     list-style: none;
-    min-width: 160px;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.08); /* Sombrinha elegante */
-    z-index: 10; /* Garante que o menu abra por cima das fotos da galeria */
-    
-    /* Esconde o menu com uma transição suave */
+    min-width: 170px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.08); 
+    z-index: 10;
+    display: flex; 
+    flex-direction: column; 
+
     opacity: 0;
     visibility: hidden;
     transition: all 0.3s ease;
 }
 
+.categories-list > li:hover .dropdown-menu {
+    opacity: 1;
+    visibility: visible;
+    transform: translateX(-50%) translateY(8px); 
+}
+
 .categories-list li.dropdown-container:hover .dropdown-menu {
     opacity: 1;
     visibility: visible;
-    transform: translateX(-50%) translateY(8px); /* Animação de subida suave */
+    transform: translateX(-50%) translateY(8px); 
 }
 
 .dropdown-menu li {
-    padding: 8px 20px;
-    border: none; /* Remove a borda de pílula dos itens internos */
-    border-radius: 0;
+    padding: 10px 20px;
     font-size: 0.85rem;
     text-align: center;
     color: var(--texto-escuro);
     background-color: transparent;
     width: 100%;
+    font-weight: 400; 
+    transition: background-color 0.2s ease;
+    cursor: pointer;
 }
 
 .dropdown-menu li:hover {
-    background-color: rgba(212, 175, 55, 0.1); /* Fundo douradinho claro */
+    background-color: rgba(212, 175, 55, 0.1); 
     color: var(--dourado);
-    transform: none; /* Remove a animação de pulo do botão principal */
 }
 
 .gallery-grid {
