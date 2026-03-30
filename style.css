@@ -103,10 +103,11 @@ img {
     margin-bottom: 40px;
 }
 
-.gallery-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 20px;
+.gallery-grid img {
+    width: 100%;
+    height: 350px;
+    border-radius: 4px;
+    background-color: #E8E0D5; 
 }
 
 .gallery-grid img {
@@ -114,6 +115,25 @@ img {
     height: 350px;
     object-fit: cover;
     border-radius: 4px;
+}
+
+.img-contain {
+    object-fit: contain; 
+}
+
+.img-cover-center {
+    object-fit: cover; 
+    object-position: center; /
+}
+
+.img-cover-top {
+    object-fit: cover; 
+    object-position: top; 
+}
+
+.img-cover-bottom {
+    object-fit: cover; 
+    object-position: bottom; 
 }
 
 /* --- SEÇÃO 2: PRODUTOS --- */
@@ -167,19 +187,32 @@ img {
 .categories-list {
     list-style: none;
     display: flex;
-    flex-direction: column;
-    gap: 10px;
+    flex-wrap: wrap;
+    gap: 15px; 
+    margin-top: 20px;
 }
 
 .categories-list li {
     font-weight: 600;
     color: var(--dourado);
     letter-spacing: 1px;
+    padding: 10px 25px;
+    border: 2px solid var(--dourado);
+    border-radius: 30px; 
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-size: 0.9rem;
+}
+
+.categories-list li:hover {
+    background-color: var(--dourado);
+    color: var(--bg-creme);
+    transform: translateY(-2px);
 }
 
 /* --- SEÇÃO 3: CONTATO --- */
 .contact-section {
-    background-color: #E8E0D5; /* Tom mais escuro baseado no layout do skincare */
+    background-color: #E8E0D5; 
     padding: 80px 5% 0 5%;
     text-align: center;
 }
