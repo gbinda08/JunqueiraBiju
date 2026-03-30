@@ -22,6 +22,9 @@ body {
     color: var(--texto-escuro);
     background-color: var(--bg-creme);
     line-height: 1.6;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
 
 img {
@@ -196,8 +199,10 @@ img {
 /* --- SEÇÃO 3: CONTATO --- */
 .contact-section {
     background-color: #E8E0D5;
-    padding: 80px 5% 0 5%;
+    padding: 80px 5% 60px 5%; 
     text-align: center;
+    margin-top: auto; 
+    width: 100%;
 }
 
 .contact-logo {
