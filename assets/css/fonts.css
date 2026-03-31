@@ -1,0 +1,81 @@
+/* --- PLAYFAIR DISPLAY --- */
+@font-face {
+    font-family: 'Playfair Display';
+    src: url('PlayfairDisplay-SemiBold.eot');
+    src: url('PlayfairDisplay-SemiBold.eot?#iefix') format('embedded-opentype'),
+        url('PlayfairDisplay-SemiBold.woff2') format('woff2'),
+        url('PlayfairDisplay-SemiBold.woff') format('woff'),
+        url('PlayfairDisplay-SemiBold.ttf') format('truetype'),
+        url('PlayfairDisplay-SemiBold.svg#PlayfairDisplay-SemiBold') format('svg');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Playfair Display';
+    src: url('PlayfairDisplay-Regular.eot');
+    src: url('PlayfairDisplay-Regular.eot?#iefix') format('embedded-opentype'),
+        url('PlayfairDisplay-Regular.woff2') format('woff2'),
+        url('PlayfairDisplay-Regular.woff') format('woff'),
+        url('PlayfairDisplay-Regular.ttf') format('truetype'),
+        url('PlayfairDisplay-Regular.svg#PlayfairDisplay-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+/* --- MONTSERRAT --- */
+@font-face {
+    font-family: 'Montserrat';
+    src: url('Montserrat-Light.eot');
+    src: url('Montserrat-Light.eot?#iefix') format('embedded-opentype'),
+        url('Montserrat-Light.woff2') format('woff2'),
+        url('Montserrat-Light.woff') format('woff'),
+        url('Montserrat-Light.ttf') format('truetype'),
+        url('Montserrat-Light.svg#Montserrat-Light') format('svg');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url('Montserrat-Regular.eot');
+    src: url('Montserrat-Regular.eot?#iefix') format('embedded-opentype'),
+        url('Montserrat-Regular.woff2') format('woff2'),
+        url('Montserrat-Regular.woff') format('woff'),
+        url('Montserrat-Regular.ttf') format('truetype'),
+        url('Montserrat-Regular.svg#Montserrat-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url('Montserrat-SemiBold.eot');
+    src: url('Montserrat-SemiBold.eot?#iefix') format('embedded-opentype'),
+        url('Montserrat-SemiBold.woff2') format('woff2'),
+        url('Montserrat-SemiBold.woff') format('woff'),
+        url('Montserrat-SemiBold.ttf') format('truetype'),
+        url('Montserrat-SemiBold.svg#Montserrat-SemiBold') format('svg');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+/* --- PONYTALEPRO --- */
+@font-face {
+    font-family: 'PonyTalePro';
+    src: url('PonyTalePro.eot');
+    src: url('PonyTalePro.eot?#iefix') format('embedded-opentype'),
+        url('PonyTalePro.woff2') format('woff2'),
+        url('PonyTalePro.woff') format('woff'),
+        url('PonyTalePro.ttf') format('truetype'),
+        url('PonyTalePro.svg#PonyTalePro') format('svg');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+
