@@ -42,59 +42,94 @@
         </div>
 
         <div class="hero-footer">
-            <h2>DELICADEZA ARTESANAL, EXCLUSIVIDADE EM CADA PEÇA.</h2>
+            <div class="hero-footer-top">
+                <h2>Delicadeza artesanal, exclusividade em cada peça.</h2>
+                <span class="gallery-label">Nossa Coleção</span>
+            </div>
             
             <div class="gallery-grid">
-                <img src="assets/img/brinco_argola.jpg" alt="Brinco Argola">
-                <img src="assets/img/brinco_losango.jpg" alt="Brinco Losango">
-                <img src="assets/img/mega_colar.jpg" alt="Colar Verde">
-                <img src="assets/img/colar_verde.jpg" alt="Colar Espiral">
+                <div class="gallery-item reveal reveal-delay-1">
+                    <img src="assets/img/brinco_argola.jpg" alt="Brinco Argola">
+                </div>
+                <div class="gallery-item reveal reveal-delay-2">
+                    <img src="assets/img/brinco_losango.jpg" alt="Brinco Losango">
+                </div>
+                <div class="gallery-item reveal reveal-delay-3">
+                    <img src="assets/img/mega_colar.jpg" alt="Mega Colar">
+                </div>
+                <div class="gallery-item reveal reveal-delay-4">
+                    <img src="assets/img/colar_verde.jpg" alt="Colar Verde">
+                </div>
             </div>
         </div>
     </section>
 
     <section class="products-section">
         <div class="products-container">
-            <div class="products-image">
+            <div class="products-image reveal">
                 <img src="assets/img/brinco_espiral.jpg" alt="Modelo com brinco">
             </div>
             
-            <div class="products-info">
-                <h2>PRODUTOS</h2>
+            <div class="products-info reveal reveal-delay-2">
+                <p class="products-eyebrow">Feito à mão com amor</p>
+                <h2>Arte em <em>miçangas</em></h2>
+                <div class="products-divider"></div>
                 <div class="products-description">
-                    <p>Nossas peças ganham vida através de um trabalho minucioso e apaixonado. Cada colar e brinco é tecido à mão com centenas de miçangas, criando padrões geométricos únicos. É a união perfeita entre paciência, arte e cores vibrantes para dar autenticidade ao seu estilo.</p>
-                    <p class="production-time">Tempo de produção: Peças feitas com calma e alma.</p>
+                    <p>Nossas peças ganham vida através de um trabalho minucioso e apaixonado. Cada colar e brinco é tecido à mão com centenas de miçangas, criando padrões geométricos únicos.</p>
+                    <p>É a união perfeita entre paciência, arte e cores vibrantes para dar autenticidade ao seu estilo.</p>
+                    <p class="production-time">Peças feitas com calma e alma.</p>
                 </div>
             </div>
         </div>
     </section>
 
     <section class="contact-section">
-        <div class="contact-top">
+        <div class="contact-top reveal">
             <img src="assets/img/junqueira_logo.png" alt="Logo Junqueira Biju" class="contact-logo">
             <div class="contact-heading">
                 <p class="small-title">Atendimento Exclusivo</p>
-                <h2>VAMOS CRIAR ALGO ÚNICO JUNTOS?</h2>
+                <h2>Vamos criar algo único juntos?</h2>
             </div>
         </div>
 
-        <div class="contact-grid">
+        <div class="contact-grid reveal">
             <div class="contact-item">
-                <h3>ACOMPANHE NOSSA ARTE</h3>
+                <span class="contact-icon">◈</span>
+                <h3>Acompanhe Nossa Arte</h3>
                 <a href="https://www.facebook.com/junqueirabiju" target="_blank"><p>FACEBOOK</p></a>
             </div>
             
             <div class="contact-item">
-                <h3>E-MAIL</h3>
+                <span class="contact-icon">✉</span>
+                <h3>E-mail</h3>
                 <p>gisele.junqueira@hotmail.com</p>
             </div>
             
             <div class="contact-item">
-                <h3>ONDE NOS ENCONTRAR</h3>
+                <span class="contact-icon">◎</span>
+                <h3>Onde nos Encontrar</h3>
                 <p>Bela Vista, Ouro Fino MG</p>
             </div>
         </div>
+
+        <div class="contact-footer-bar">
+            <span>©2025</span>
+            <span class="footer-brand-name">Junqueira Biju</span>
+            <span>— Todos os direitos reservados</span>
+        </div>
     </section>
 
+    <script>
+        // Scroll
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, { threshold: 0.15 });
+
+        document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+    </script>
 </body>
 </html>
